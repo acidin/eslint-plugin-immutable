@@ -76,7 +76,7 @@ const point = { x: 23, y: 44 };
 point.x = 99; // <- No object mutation allowed.
 ```
 
-This rule is just as effective as using Object.freeze() to prevent mutations in your Redux reducers. However this rule has **no run-time cost.** A good alternative to object mutation is to use the object spread syntax coming in ES2016.
+This rule is just as effective as using Object.freeze() to prevent mutations in your Redux reducers. However this rule has **no run-time cost.** A good alternative to object mutation is to use the [object spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator).
 
 ```JavaScript
 const point = { x: 23, y: 44 };
